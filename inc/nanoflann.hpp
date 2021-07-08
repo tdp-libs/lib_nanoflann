@@ -47,6 +47,8 @@
 #ifndef NANOFLANN_HPP_
 #define NANOFLANN_HPP_
 
+#include "lib_platform/Globals.h"
+
 #include <algorithm>
 #include <array>
 #include <cassert>
@@ -599,7 +601,8 @@ template <typename T> inline T *allocate(size_t count = 1) {
 const size_t WORDSIZE = 16;
 const size_t BLOCKSIZE = 8192;
 
-class PooledAllocator {
+class PooledAllocator
+{
   /* We maintain memory alignment to word boundaries by requiring that all
       allocations be in multiples of the machine wordsize.  */
   /* Size of machine word in bytes.  Must be power of 2. */
