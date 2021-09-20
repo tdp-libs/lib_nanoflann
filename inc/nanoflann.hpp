@@ -1534,6 +1534,8 @@ public:
     BaseClassRef::m_leaf_max_size = params.leaf_max_size;
   }
 
+  KDTreeSingleIndexDynamicAdaptor_(const KDTreeSingleIndexDynamicAdaptor_& other)=default;
+
   /** Assignment operator definiton */
   KDTreeSingleIndexDynamicAdaptor_
   operator=(const KDTreeSingleIndexDynamicAdaptor_ &rhs) {
