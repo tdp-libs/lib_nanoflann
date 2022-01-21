@@ -802,7 +802,7 @@ public:
 
   /** The KD-tree used to find neighbours */
 
-  BoundingBox root_bbox;
+  BoundingBox root_bbox{};
 
   /**
    * Pooled memory allocator.
